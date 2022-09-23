@@ -1,4 +1,4 @@
-# Repositorio en GitHub https://github.com/xOverlap/tarea-POO, utilice mas cosas de las que mostro en clases ya que yo e estudiado por mi cuenta desde hace unos meses (trate de no usar acentos ni ñ por algunos errores que pude probocar).
+# Repositorio en GitHub https://github.com/xOverlap/tarea-POO, utilice mas cosas de las que mostro en clases ya que yo e estudiado por mi cuenta desde hace unos meses (trate de no usar acentos ni ñ por algunos errores que pude provocar).
 
 import math
 aceleracion = 0 # Definimos la aceleracion inicial
