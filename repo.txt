@@ -1,3 +1,5 @@
+# Repositorio en GitHub https://github.com/xOverlap/tarea-POO, utilice mas cosas de las que mostro en clases ya que yo e estudiado por mi cuenta desde hace unos meses (trate de no usar acentos ni ñ por algunos errores que pude probocar).
+
 import math
 aceleracion = 0 # Definimos la aceleracion inicial
 pi = math.pi # Importamos pi de la libreria Math
@@ -5,6 +7,7 @@ latitud1 = 0
 longitud1 = 0
 
 def Distancia(lat1, log1, lat2, log2):
+    # Esta formula la encontre por internet, pero yo la aplique para python con la libreria math
     # Radio de la tierra en kilometros
     radio = 6371
     # Convertimos las cordenadas en radianes
