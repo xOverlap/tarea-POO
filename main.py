@@ -1,4 +1,5 @@
 import math
+from datetime import datetime
 aceleracion = 0 # Definimos la aceleracion inicial
 pi = math.pi # Importamos pi de la libreria Math
 latitud1 = 0
@@ -32,8 +33,9 @@ matricula = input("Ingrese su matricula:\n")
 if edad < 18:
     print("No puede ingresar al sistema, usted es menor de edad\n")
 elif edad >= 18:
+    
     # Se muestran sus datos ingresados
-    print("Su rut es: ", rut,", su nombre es: ", nombre,", su apellido es: ", apellido,", su correo es: ", correo,", su edad es: ", edad," y su matricula es: ", matricula)
+    print("Su rut es:", rut,", su nombre es:", nombre,", su apellido es:", apellido,", su correo es:", correo,", su edad es:", edad,", su matricula es:", matricula, ", fecha de registro:", datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
     #  Se le da a escojer una opcion
     print("Presione 1 para iniciar sesion. ")
     print("Presione 2 para comenzar una carrera ")
@@ -44,7 +46,7 @@ elif edad >= 18:
         verficacionContraseña = input("Ingrese su contraseña:\n")
         # Si el correo y la contraseña son correctos, se le da a escojer una opcion
         if verficacionCorreo == correo and verficacionContraseña == contraseña:
-            print("Bienvenido", nombre, "matricula numero", matricula, "\n")
+            print("Bienvenido", nombre, ", matricula numero", matricula, datetime.now().strftime("Dia %d del %m del %Y %H:%M:%S"))
             opcion = ""
             encendido = False
             # Se le preguta si quiere comenzar una carrera
@@ -102,7 +104,7 @@ elif edad >= 18:
                         latitud2 = float(input("Ingrese la latitud de destino:\n"))
                         longitud2 = float(input("Ingrese la longitud de destino:\n"))
                         distancia = Distancia(latitud1, longitud1, latitud2, longitud2)
-                        print("Distancia recorrida: ", round(distancia, 2), "Km")
+                        print("Distancia recorrida:", round(distancia, 2), "Km")
                         print("Total a pagar por el viaje: $", round(distancia*(220*1.8))) # Como no nos indica investigue y segun meganoticias uber en 2018 cobraba 220 pesos por km recorrido, no encontre informacion actualizada pero por el precio de la gasolina en 2018 que estaba a 737 vs hoy que esta a 1310 multiplicare por 1.8 aprox ese valor
                     else:
                         print("Puede que el motor este apagado o no haya ingresado una opción válida\n")
